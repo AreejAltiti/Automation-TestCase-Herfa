@@ -2,6 +2,7 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)system.text.json\8.0.4\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.4\buildTransitive\net6.0\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.speech\5.0.0\build\netcoreapp2.0\System.Speech.targets" Condition="Exists('$(NuGetPackageRoot)system.speech\5.0.0\build\netcoreapp2.0\System.Speech.targets')" />
     <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\129.0.6668.5800\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\129.0.6668.5800\build\Selenium.WebDriver.ChromeDriver.targets')" />
     <Import Project="$(NuGetPackageRoot)selenium.webdriver\4.25.0\buildTransitive\Selenium.WebDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver\4.25.0\buildTransitive\Selenium.WebDriver.targets')" />
     <Import Project="$(NuGetPackageRoot)mstest.testframework\2.2.10\build\net5.0\MSTest.TestFramework.targets" Condition="Exists('$(NuGetPackageRoot)mstest.testframework\2.2.10\build\net5.0\MSTest.TestFramework.targets')" />
